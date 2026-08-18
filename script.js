@@ -237,7 +237,7 @@ function initTypingEffect() {
   // Cada linha é uma lista de "pedaços" de texto com sua classe de destaque de sintaxe
   const lines = [
     [{ t: 'const ', c: 'kw' }, { t: 'perfil', c: 'prop' }, { t: ' = {', c: 'punc' }],
-    [{ t: '  nome: ', c: 'punc' }, { t: '"Seu Nome Completo"', c: 'str' }, { t: ',', c: 'punc' }],
+    [{ t: '  nome: ', c: 'punc' }, { t: '"Lucas Limoli"', c: 'str' }, { t: ',', c: 'punc' }],
     [{ t: '  cargo: ', c: 'punc' }, { t: '"Full Stack Developer"', c: 'str' }, { t: ',', c: 'punc' }],
     [
       { t: '  stack: [', c: 'punc' },
