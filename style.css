@@ -1164,22 +1164,24 @@ h1, h2, h3, h4 {
   .skills-groups { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { 
-    grid-template-columns: 1fr; gap: 10px; 
-    padding-bottom: 20px;
+     display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: flex; /* Centraliza o conjunto das 3 colunas */
+    align-items: center;
+    gap: 0px;
   }
   .footer-brand { 
-    margin-top: 40px; margin-bottom: 0px;
+    margin-top: 40px; margin-bottom: 40px;
   }
   .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
   .footer-links {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin: 0 auto;
 } 
   .footer-socials {
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10%; margin-bottom: 2%;
     flex-direction: column;
     margin: 0 auto;
   }
