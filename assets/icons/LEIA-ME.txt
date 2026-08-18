@@ -1,0 +1,3 @@
+Pasta reservada para ícones/SVGs personalizados.
+Atualmente o site utiliza a biblioteca Font Awesome via CDN (veja index.html),
+então esta pasta pode ficar vazia ou ser usada para ícones customizados.

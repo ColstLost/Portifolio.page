@@ -1,0 +1,4 @@
+Coloque aqui as imagens do site:
+- foto-perfil.jpg (foto de perfil de Lucas)
+- og-cover.jpg (imagem de capa 1200x630px para Open Graph / redes sociais)
+- imagens dos projetos, se desejar substituir os ícones ilustrativos

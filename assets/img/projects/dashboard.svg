@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260">
+  <defs>
+    <linearGradient id="dashBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131a2a"/>
+      <stop offset="100%" stop-color="#1b2436"/>
+    </linearGradient>
+    <linearGradient id="dashBar" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#4FD1C5"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#dashBg)"/>
+  <!-- cartao grafico de barras -->
+  <rect x="24" y="24" width="180" height="130" rx="10" fill="#0f1521" stroke="#2a3448"/>
+  <g>
+    <rect x="42" y="120" width="16" height="24" rx="3" fill="url(#dashBar)" opacity="0.55"/>
+    <rect x="66" y="100" width="16" height="44" rx="3" fill="url(#dashBar)" opacity="0.7"/>
+    <rect x="90" y="80" width="16" height="64" rx="3" fill="url(#dashBar)" opacity="0.85"/>
+    <rect x="114" y="60" width="16" height="84" rx="3" fill="url(#dashBar)"/>
+    <rect x="138" y="94" width="16" height="50" rx="3" fill="url(#dashBar)" opacity="0.65"/>
+    <rect x="162" y="108" width="16" height="36" rx="3" fill="url(#dashBar)" opacity="0.5"/>
+  </g>
+  <!-- cartao donut -->
+  <rect x="216" y="24" width="160" height="130" rx="10" fill="#0f1521" stroke="#2a3448"/>
+  <circle cx="296" cy="89" r="40" fill="none" stroke="#212c42" stroke-width="14"/>
+  <circle cx="296" cy="89" r="40" fill="none" stroke="#4FD1C5" stroke-width="14" stroke-dasharray="150 251" stroke-linecap="round" transform="rotate(-90 296 89)"/>
+  <circle cx="296" cy="89" r="40" fill="none" stroke="#F5B942" stroke-width="14" stroke-dasharray="60 251" stroke-dashoffset="-150" stroke-linecap="round" transform="rotate(-90 296 89)"/>
+  <!-- cartao linha inferior -->
+  <rect x="24" y="168" width="352" height="70" rx="10" fill="#0f1521" stroke="#2a3448"/>
+  <polyline points="42,215 90,195 130,222 172,180 214,205 256,188 298,210 340,192 358,200" fill="none" stroke="#818CF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="130" cy="222" r="4" fill="#818CF8"/>
+  <circle cx="214" cy="205" r="4" fill="#818CF8"/>
+  <circle cx="298" cy="210" r="4" fill="#818CF8"/>
+</svg>

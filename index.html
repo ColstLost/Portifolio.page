@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ===================== METADADOS BÁSICOS ===================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Limoli | Desenvolvedor Full Stack & Estudante de Ciência da Computação</title>
+  <meta name="description" content="Portfólio de Lucas Limoli, estudante de Ciência da Computação e desenvolvedor Full Stack em formação. Projetos em HTML, CSS, JavaScript, Python, Java e MySQL. Aberto a oportunidades de estágio.">
+  <meta name="keywords" content="portfólio, desenvolvedor full stack, estágio tecnologia, ciência da computação, HTML, CSS, JavaScript, Python, Java, MySQL, desenvolvedor júnior">
+  <meta name="author" content="Lucas Limoli">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://seudominio.com/">
+  <meta name="theme-color" content="#0B0F19">
+
+  <!-- ===================== OPEN GRAPH (compartilhamento em redes sociais) ===================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lucas Limoli | Desenvolvedor Full Stack">
+  <meta property="og:description" content="Estudante de Ciência da Computação (4º semestre) em busca de oportunidades de estágio. Confira meus projetos em HTML, CSS, JavaScript, Python, Java e MySQL.">
+  <meta property="og:image" content="https://seudominio.com/assets/og-image.png">
+  <meta property="og:url" content="https://seudominio.com/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Portfólio - Lucas Limoli">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lucas Limoli | Desenvolvedor Full Stack">
+  <meta name="twitter:description" content="Portfólio profissional de desenvolvimento Full Stack e projetos de Ciência da Computação.">
+  <meta name="twitter:image" content="https://seudominio.com/assets/og-image.png">
+
+  <!-- ===================== ÍCONES ===================== -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="shortcut icon" href="assets/favicon.svg">
+
+  <!-- ===================== FONTES (Google Fonts) ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ===================== ÍCONES (Font Awesome) ===================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- ===================== CSS PRÓPRIO ===================== -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Link de acessibilidade para pular direto ao conteúdo -->
+  <a href="#home" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ===================== CABEÇALHO / NAVEGAÇÃO ===================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#home" class="logo" aria-label="Voltar ao início">
+        <span class="logo-bracket">&lt;</span>Lucas.Dev<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active" data-nav="home">Início</a></li>
+        <li><a href="#sobre" class="nav-link" data-nav="sobre">Sobre</a></li>
+        <li><a href="#habilidades" class="nav-link" data-nav="habilidades">Habilidades</a></li>
+        <li><a href="#projetos" class="nav-link" data-nav="projetos">Projetos</a></li>
+        <li><a href="#experiencia" class="nav-link" data-nav="experiencia">Experiência</a></li>
+        <li><a href="#formacao" class="nav-link" data-nav="formacao">Formação</a></li>
+        <li><a href="#contato" class="nav-link" data-nav="contato">Contato</a></li>
+        <li class="nav-menu-cta"><a href="#contato" class="btn btn-primary btn-sm">Contrate-me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== 1. PÁGINA INICIAL / HERO ===================== -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-content">  
+
+          <div class="hero-avatar">
+            <!-- 🔧 Espaço reservado para foto de perfil.
+                 Para usar uma foto real, troque o bloco abaixo por:
+                 <img src="assets/img/perfil.jpg" alt="Foto de Lucas Limoli" class="avatar-photo"> -->
+            <div class="avatar-ring">
+              <div class="avatar-placeholder" role="img" aria-label="Espaço reservado para foto de perfil">
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </div>
+            <span class="status-badge"><span class="status-dot"></span> Disponível para estágio</span>
+          </div>
+
+          <h1 class="hero-title">Lucas Limoli</h1>
+          <p class="hero-role">Desenvolvedor Full Stack <span class="dot-sep">•</span> Estudante de Ciência da Computação</p>
+
+          <p class="hero-text">
+            Estudante de Ciência da Computação, no 4º semestre, apaixonado por transformar problemas reais
+            em soluções de software funcionais e bem projetadas. Tenho experiência prática construindo
+            aplicações web com <strong>HTML, CSS e JavaScript</strong>, sistemas com <strong>Python</strong> e
+            <strong>Java</strong>, além de modelagem e consultas em <strong>MySQL</strong>. Busco uma oportunidade
+            de estágio para aplicar esse conhecimento em projetos reais e continuar evoluindo como desenvolvedor.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-outline" href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a class="btn btn-outline" href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a class="btn btn-outline" href="assets/cv/curriculo.pdf" download>
+              <i class="fa-solid fa-download"></i> Currículo
+            </a>
+            <a class="btn btn-primary" href="#contato">
+              <i class="fa-solid fa-paper-plane"></i> Fale comigo
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-number">4º</span>
+              <span class="hero-stat-label">Semestre de<br>Ciência da Computação</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">6</span>
+              <span class="hero-stat-label">Tecnologias<br>principais</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">5+</span>
+              <span class="hero-stat-label">Projetos<br>desenvolvidos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elemento visual assinatura: janela de código com efeito de digitação -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-window-bar">
+              <span class="wdot wdot-red"></span>
+              <span class="wdot wdot-yellow"></span>
+              <span class="wdot wdot-green"></span>
+              <span class="code-window-title">perfil.js</span>
+            </div>
+            <div class="code-window-body">
+              <pre><code id="typedCode" class="typed-code"></code><span class="type-cursor">&nbsp;</span></pre>
+            </div>
+          </div>
+          <div class="code-window-glow"></div>
+        </div>
+
+      </div>
+
+      <a href="#sobre" class="scroll-cue" aria-label="Rolar para a seção Sobre">
+        <span class="scroll-cue-track"><span class="scroll-cue-dot"></span></span>
+        <span class="scroll-cue-label">scroll</span>
+      </a>
+    </section>
+
+    <!-- ===================== 2. SOBRE MIM ===================== -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <p class="eyebrow">01 // sobre-mim</p>
+        <h2 class="section-title">Sobre mim</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Sou estudante de <strong>Ciência da Computação</strong>, atualmente no 4º semestre, com forte
+              interesse em desenvolvimento Full Stack, estruturação de dados e automação de processos.
+              Ao longo da minha trajetória acadêmica e profissional, desenvolvi projetos práticos que unem
+              front-end, back-end e banco de dados, sempre buscando escrever código limpo, organizado e
+              fácil de manter.
+            </p>
+
+            <div class="about-block">
+              <h3><i class="fa-solid fa-graduation-cap"></i> Formação acadêmica</h3>
+              <p>Bacharelado em Ciência da Computação — 4º semestre, em andamento na Instituição de Ensino Superior (substitua pelo nome da sua instituição).</p>
+            </div>
+
+            <div class="about-block">
+              <h3><i class="fa-solid fa-bullseye"></i> Objetivos de carreira</h3>
+              <p>Conquistar uma vaga de estágio em desenvolvimento de software, onde eu possa aplicar meus
+                conhecimentos em programação e banco de dados, aprender com profissionais experientes e evoluir
+                até atuar como desenvolvedor Full Stack júnior.</p>
+            </div>
+
+            <div class="about-block">
+              <h3><i class="fa-solid fa-comments"></i> Experiência com pessoas</h3>
+              <p>Além da parte técnica, tenho vivência em atendimento ao cliente, ouvidoria e suporte técnico,
+                o que reforçou minha comunicação, paciência e capacidade de traduzir problemas técnicos em
+                soluções claras para quem não é da área.</p>
+            </div>
+          </div>
+
+          <aside class="about-competencies reveal">
+            <h3>Competências técnicas</h3>
+            <ul class="tag-list">
+              <li><i class="fa-brands fa-html5"></i> HTML5</li>
+              <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+              <li><i class="fa-brands fa-js"></i> JavaScript</li>
+              <li><i class="fa-brands fa-python"></i> Python</li>
+              <li><i class="fa-brands fa-java"></i> Java</li>
+              <li><i class="fa-solid fa-database"></i> MySQL</li>
+              <li><i class="fa-solid fa-file-excel"></i> Excel</li>
+              <li><i class="fa-solid fa-bolt"></i> Power Automate</li>
+              <li><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</li>
+            </ul>
+
+            <h3>Competências comportamentais</h3>
+            <ul class="tag-list tag-list-soft">
+              <li>Resolução de problemas</li>
+              <li>Comunicação</li>
+              <li>Análise técnica</li>
+              <li>Trabalho em equipe</li>
+              <li>Proatividade</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. HABILIDADES ===================== -->
+    <section id="habilidades" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">02 // habilidades.json</p>
+        <h2 class="section-title">Habilidades técnicas</h2>
+        <p class="section-subtitle">Nível de domínio autoavaliado em cada tecnologia, atualizado conforme novos projetos e estudos.</p>
+
+        <div class="skills-groups">
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title"><i class="fa-solid fa-code"></i> Linguagens &amp; Web</h3>
+            <div class="skill-bars">
+              <div class="skill" data-level="90">
+                <div class="skill-head"><span><i class="fa-brands fa-html5"></i> HTML</span><span class="skill-percent">90%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" data-level="88">
+                <div class="skill-head"><span><i class="fa-brands fa-css3-alt"></i> CSS</span><span class="skill-percent">88%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" data-level="82">
+                <div class="skill-head"><span><i class="fa-brands fa-js"></i> JavaScript</span><span class="skill-percent">82%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title"><i class="fa-solid fa-server"></i> Backend &amp; Dados</h3>
+            <div class="skill-bars">
+              <div class="skill" data-level="85">
+                <div class="skill-head"><span><i class="fa-brands fa-python"></i> Python</span><span class="skill-percent">85%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" data-level="75">
+                <div class="skill-head"><span><i class="fa-brands fa-java"></i> Java</span><span class="skill-percent">75%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" data-level="80">
+                <div class="skill-head"><span><i class="fa-solid fa-database"></i> MySQL</span><span class="skill-percent">80%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group reveal">
+            <h3 class="skills-group-title"><i class="fa-solid fa-toolbox"></i> Produtividade &amp; Ferramentas</h3>
+            <div class="skill-bars">
+              <div class="skill" data-level="82">
+                <div class="skill-head"><span><i class="fa-solid fa-file-excel"></i> Excel</span><span class="skill-percent">82%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" data-level="75">
+                <div class="skill-head"><span><i class="fa-solid fa-bolt"></i> Power Automate</span><span class="skill-percent">75%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill" data-level="88">
+                <div class="skill-head"><span><i class="fa-brands fa-git-alt"></i> Git e GitHub</span><span class="skill-percent">88%</span></div>
+                <div class="skill-track"><div class="skill-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. PROJETOS ===================== -->
+   <!-- <section id="projetos" class="section">
+      <div class="container">
+        <p class="eyebrow">03 // projetos</p>
+        <h2 class="section-title">Projetos em destaque</h2>
+        <p class="section-subtitle">Uma seleção de projetos acadêmicos e pessoais que aplicam front-end, back-end, banco de dados e automação.</p>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/img/projects/estoque.svg" alt="Ilustração do Sistema de Controle de Estoque" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sistema de Controle de Estoque</h3>
+              <p class="project-desc">
+                Aplicação para cadastro de produtos, controle de entradas e saídas e alertas de estoque mínimo,
+                com relatórios simples de movimentação.
+              </p>
+              <ul class="project-tech">
+                <li>Python</li><li>MySQL</li><li>HTML</li><li>CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demonstração</a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código-fonte</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/img/projects/dashboard.svg" alt="Ilustração do Dashboard de Relatórios" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Dashboard de Relatórios</h3>
+              <p class="project-desc">
+                Painel visual para acompanhamento de indicadores, com gráficos dinâmicos, filtros por período
+                e exportação de dados consumidos diretamente do banco de dados.
+              </p>
+              <ul class="project-tech">
+                <li>JavaScript</li><li>Python</li><li>MySQL</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demonstração</a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código-fonte</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/img/projects/chamados.svg" alt="Ilustração do Sistema de Chamados" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sistema de Chamados</h3>
+              <p class="project-desc">
+                Plataforma para abertura, priorização e acompanhamento de chamados de suporte técnico, com
+                histórico de atendimentos e status em tempo real.
+              </p>
+              <ul class="project-tech">
+                <li>Java</li><li>MySQL</li><li>HTML</li><li>CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demonstração</a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código-fonte</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/img/projects/automacao.svg" alt="Ilustração da Automação com Power Automate" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Automação com Power Automate</h3>
+              <p class="project-desc">
+                Fluxo automatizado para coleta de respostas de formulários, atualização de planilhas e envio
+                de notificações por e-mail, eliminando tarefas manuais repetitivas.
+              </p>
+              <ul class="project-tech">
+                <li>Power Automate</li><li>Excel</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demonstração</a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código-fonte</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="assets/img/projects/landing.svg" alt="Ilustração da Landing Page Responsiva" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Landing Page Responsiva</h3>
+              <p class="project-desc">
+                Página institucional totalmente responsiva, com foco em performance, acessibilidade e boas
+                práticas de SEO para desktop, tablet e celular.
+              </p>
+              <ul class="project-tech">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demonstração</a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código-fonte</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ===================== 5. EXPERIÊNCIA PROFISSIONAL ===================== -->
+    <section id="experiencia" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">04 // experiencia</p>
+        <h2 class="section-title">Experiência profissional</h2>
+        <p class="section-subtitle">Vivência prática em atendimento e suporte que fortaleceu habilidades essenciais para o desenvolvimento de software.</p>
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fa-solid fa-headset"></i></div>
+            <div class="timeline-card">
+              <h3>Atendimento ao Cliente</h3>
+              <p>Atuação direta no atendimento a clientes, esclarecendo dúvidas, registrando solicitações e
+                garantindo uma experiência satisfatória do início ao fim do contato.</p>
+              <ul class="timeline-highlights">
+                <li><i class="fa-solid fa-check"></i> Comunicação clara e empática</li>
+                <li><i class="fa-solid fa-check"></i> Resolução de problemas sob pressão</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fa-solid fa-scale-balanced"></i></div>
+            <div class="timeline-card">
+              <h3>Ouvidoria</h3>
+              <p>Tratamento de manifestações, reclamações e sugestões, analisando cada caso com atenção
+                para propor soluções justas e melhorar processos internos.</p>
+              <ul class="timeline-highlights">
+                <li><i class="fa-solid fa-check"></i> Análise crítica de processos</li>
+                <li><i class="fa-solid fa-check"></i> Mediação de conflitos</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fa-solid fa-laptop-medical"></i></div>
+            <div class="timeline-card">
+              <h3>Assistência Técnica &amp; Diagnóstico de Dispositivos</h3>
+              <p>Diagnóstico e resolução de problemas em dispositivos eletrônicos, identificando causas raiz
+                e aplicando soluções técnicas de forma organizada e documentada.</p>
+              <ul class="timeline-highlights">
+                <li><i class="fa-solid fa-check"></i> Diagnóstico técnico estruturado</li>
+                <li><i class="fa-solid fa-check"></i> Documentação de soluções</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. FORMAÇÃO ACADÊMICA ===================== -->
+    <section id="formacao" class="section">
+      <div class="container">
+        <p class="eyebrow">05 // formacao</p>
+        <h2 class="section-title">Formação acadêmica</h2>
+
+        <div class="education-grid">
+          <div class="education-main-card reveal">
+            <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Bacharelado em Ciência da Computação</h3>
+            <p class="education-status">4º semestre &bull; em andamento</p>
+            <p>Instituição de Ensino Superior (substitua pelo nome da sua instituição). Formação com foco em
+              lógica de programação, estrutura de dados, banco de dados, engenharia de software e
+              desenvolvimento web.</p>
+          </div>
+
+          <div class="courses-list reveal">
+            <h3>Cursos complementares</h3>
+            <ul>
+              <li><i class="fa-solid fa-certificate"></i> Desenvolvimento Web Full Stack</li>
+              <li><i class="fa-solid fa-certificate"></i> Lógica de Programação e Algoritmos</li>
+              <li><i class="fa-solid fa-certificate"></i> Banco de Dados MySQL</li>
+              <li><i class="fa-solid fa-certificate"></i> Python para Automação de Processos</li>
+              <li><i class="fa-solid fa-certificate"></i> Excel Avançado</li>
+              <li><i class="fa-solid fa-certificate"></i> Power Automate na Prática</li>
+              <li><i class="fa-solid fa-certificate"></i> Git e GitHub para Controle de Versão</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. CONTATO ===================== -->
+    <section id="contato" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">06 // contato</p>
+        <h2 class="section-title">Vamos conversar</h2>
+        <p class="section-subtitle">Estou aberto a oportunidades de estágio e projetos. Envie uma mensagem — respondo o mais rápido possível.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a class="contact-info-item" href="mailto:limoli.lucas@gmail.com">
+              <span class="contact-info-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span>
+                <strong>E-mail</strong>
+                <small>limoli.lucas@gmail.com</small>
+              </span>
+            </a>
+            <a class="contact-info-item" href="tel:+5511994841218">
+              <span class="contact-info-icon"><i class="fa-solid fa-phone"></i></span>
+              <span>
+                <strong>Telefone</strong>
+                <small>(11) 99484-1218</small>
+              </span>
+            </a>
+            <div class="contact-info-item">
+              <span class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <span>
+                <strong>Localização</strong>
+                <small>Vila Santa Catarina, São Paulo/SP</small>
+              </span>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:limoli.lucas@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Como você se chama?">
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required autocomplete="email" placeholder="seu@email.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <input type="text" id="assunto" name="assunto" required placeholder="Sobre o que você quer falar?">
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+              <span class="btn-label"><i class="fa-solid fa-paper-plane"></i> Enviar mensagem</span>
+            </button>
+
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>Lucas.Dev<span class="logo-bracket">/&gt;</span></a>
+        <p>Desenvolvedor Full Stack em formação, construindo soluções com HTML, CSS, JavaScript, Python, Java e MySQL.</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="footer-socials">
+        <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:limoli.lucas@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Lucas Limoli. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante voltar ao topo -->
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script src="script.js"></script>
+</body>
+</html>
