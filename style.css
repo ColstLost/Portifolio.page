@@ -1126,7 +1126,7 @@ h1, h2, h3, h4 {
   
 }
 
-/* Menu mobile + ajustes gerais (até 860px) */
+/* Menu mobile + ajustes gerais (até 950px) */
 @media (max-width: 950px) {
   .nav-toggle { display: flex; }
 
