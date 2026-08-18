@@ -117,10 +117,17 @@ function initMobileNav() {
   const navMenu = document.getElementById('navMenu');
   if (!navToggle || !navMenu) return;
 
+  // Centraliza o travamento/liberação do scroll do body em uma única função,
+  // usada tanto ao abrir/fechar pelo hambúrguer quanto ao fechar por um link.
+  const setBodyScrollLock = (locked) => {
+    document.body.style.overflow = locked ? 'hidden' : '';
+  };
+
   const closeMenu = () => {
     navToggle.classList.remove('open');
     navMenu.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
+    setBodyScrollLock(false); // <- BUGFIX: antes o scroll ficava travado ao fechar por um link
   };
 
   navToggle.addEventListener('click', () => {
@@ -129,8 +136,8 @@ function initMobileNav() {
     navToggle.classList.toggle('open', isOpen);
     navToggle.setAttribute('aria-expanded', String(isOpen));
 
-    document.body.style.overflow = isOpen ? 'hidden' : '';
-});
+    setBodyScrollLock(isOpen);
+  });
 
   // Fecha o menu automaticamente ao clicar em um link (experiência mobile melhor)
   navMenu.querySelectorAll('.nav-link, .nav-menu-cta a').forEach((link) => {
